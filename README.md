@@ -3,30 +3,30 @@
 This is an [iocage][iocage] plugin for running [zigbee2mqtt][z2m] on TrueNAS
 Core.
 
+This is a fork of [paxswill][iocage-zigbee2mqtt] which the install instructions didn't work for me.
+
 [iocage]: https://github.com/iocage/iocage
 [z2m]: https://www.zigbee2mqtt.io/
+[paxswill]: https://github.com/paxswill/iocage-zigbee2mqtt
 
 ## Requirements
 
-* An MQTT broker is required. I use another iocage plugin for
-  [Mosquitto][iocage-mqtt].
+* An MQTT broker is required. I use another host for mosquitto.
+  But you could try this iocage: [Mosquitto][iocage-mqtt].
 * You will also need a [supported Zigbee adapter][z2m-coordinators].
 * And finally, at least one [supported Zigbee device][z2m-devices].
 
-[iocage-mqtt]: https://github.com/tprelog/iocage-mosquitto
+[iocage-mosquito]: https://github.com/tprelog/iocage-mosquitto
 [z2m-coordinators]: https://www.zigbee2mqtt.io/information/supported_adapters.html
 [z2m-devices]: https://www.zigbee2mqtt.io/information/supported_devices.html
 
 ## Installation
 
-At some point in the future, this plugin should be available as a Community
-Plugin.
-
-As an alternative, the following command will install from this repository
+The following command will install from this repository
 directly:
 
 ```shell
-iocage fetch -P zigbee2mqtt -g https://github.com/paxswill/iocage-zigbee2mqtt --branch 12.1-RELEASE --name zigbee2mqtt
+iocage fetch -P zigbee2mqtt -g https://github.com/medains/iocage-zigbee2mqtt --branch 1.0.0 --name zigbee2mqtt
 ```
 
 The name can be modified as needed, and other properties (like setting VNET

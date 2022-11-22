@@ -3,7 +3,7 @@
     "MANIFEST": "zigbee2mqtt.json",
     "name": "Zigbee2MQTT",
     "description": "Connect Zigbee devices to an MQTT broker.",
-    "icon": "https://raw.githubusercontent.com/paxswill/iocage-zigbee2mqtt/master/icons/zigbee2mqtt.png",
+    "icon": "https://raw.githubusercontent.com/medains/iocage-zigbee2mqtt/master/icons/zigbee2mqtt.png",
     "primary_pkg": null,
     "official": false
   }
